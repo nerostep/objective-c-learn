@@ -10,6 +10,11 @@
 		CE9826B7175CDFE8005C1590 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9826B6175CDFE8005C1590 /* Foundation.framework */; };
 		CE9826BA175CDFE8005C1590 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9826B9175CDFE8005C1590 /* main.m */; };
 		CE9826BE175CDFE8005C1590 /* objective_c_learn.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE9826BD175CDFE8005C1590 /* objective_c_learn.1 */; };
+		CE9826CA175CE1A0005C1590 /* AddMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9826C9175CE1A0005C1590 /* AddMethod.m */; };
+		CE9826CD175CEA5D005C1590 /* SubMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9826CC175CEA5D005C1590 /* SubMethod.m */; };
+		CE9826D0175CEB53005C1590 /* MulMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9826CF175CEB53005C1590 /* MulMethod.m */; };
+		CE9826D3175CEC16005C1590 /* DivMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9826D2175CEC16005C1590 /* DivMethod.m */; };
+		CE9826D6175CED3E005C1590 /* Calculation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9826D5175CED3E005C1590 /* Calculation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +36,17 @@
 		CE9826B9175CDFE8005C1590 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE9826BC175CDFE8005C1590 /* objective-c learn-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "objective-c learn-Prefix.pch"; sourceTree = "<group>"; };
 		CE9826BD175CDFE8005C1590 /* objective_c_learn.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = objective_c_learn.1; sourceTree = "<group>"; };
+		CE9826C7175CE0BA005C1590 /* NEExecution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEExecution.h; sourceTree = "<group>"; };
+		CE9826C8175CE1A0005C1590 /* AddMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMethod.h; sourceTree = "<group>"; };
+		CE9826C9175CE1A0005C1590 /* AddMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMethod.m; sourceTree = "<group>"; };
+		CE9826CB175CEA5D005C1590 /* SubMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubMethod.h; sourceTree = "<group>"; };
+		CE9826CC175CEA5D005C1590 /* SubMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubMethod.m; sourceTree = "<group>"; };
+		CE9826CE175CEB53005C1590 /* MulMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MulMethod.h; sourceTree = "<group>"; };
+		CE9826CF175CEB53005C1590 /* MulMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MulMethod.m; sourceTree = "<group>"; };
+		CE9826D1175CEC16005C1590 /* DivMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DivMethod.h; sourceTree = "<group>"; };
+		CE9826D2175CEC16005C1590 /* DivMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DivMethod.m; sourceTree = "<group>"; };
+		CE9826D4175CED3E005C1590 /* Calculation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculation.h; sourceTree = "<group>"; };
+		CE9826D5175CED3E005C1590 /* Calculation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +89,9 @@
 		CE9826B8175CDFE8005C1590 /* objective-c learn */ = {
 			isa = PBXGroup;
 			children = (
-				CE9826B9175CDFE8005C1590 /* main.m */,
+				CE9826C6175CE065005C1590 /* prot */,
+				CE9826C5175CE008005C1590 /* main */,
+				CE9826C4175CDFFB005C1590 /* class */,
 				CE9826BD175CDFE8005C1590 /* objective_c_learn.1 */,
 				CE9826BB175CDFE8005C1590 /* Supporting Files */,
 			);
@@ -86,6 +104,39 @@
 				CE9826BC175CDFE8005C1590 /* objective-c learn-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE9826C4175CDFFB005C1590 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				CE9826D4175CED3E005C1590 /* Calculation.h */,
+				CE9826D5175CED3E005C1590 /* Calculation.m */,
+				CE9826C8175CE1A0005C1590 /* AddMethod.h */,
+				CE9826C9175CE1A0005C1590 /* AddMethod.m */,
+				CE9826CB175CEA5D005C1590 /* SubMethod.h */,
+				CE9826CC175CEA5D005C1590 /* SubMethod.m */,
+				CE9826CE175CEB53005C1590 /* MulMethod.h */,
+				CE9826CF175CEB53005C1590 /* MulMethod.m */,
+				CE9826D1175CEC16005C1590 /* DivMethod.h */,
+				CE9826D2175CEC16005C1590 /* DivMethod.m */,
+			);
+			name = class;
+			sourceTree = "<group>";
+		};
+		CE9826C5175CE008005C1590 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				CE9826B9175CDFE8005C1590 /* main.m */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		CE9826C6175CE065005C1590 /* prot */ = {
+			isa = PBXGroup;
+			children = (
+				CE9826C7175CE0BA005C1590 /* NEExecution.h */,
+			);
+			name = prot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +191,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE9826BA175CDFE8005C1590 /* main.m in Sources */,
+				CE9826CA175CE1A0005C1590 /* AddMethod.m in Sources */,
+				CE9826CD175CEA5D005C1590 /* SubMethod.m in Sources */,
+				CE9826D0175CEB53005C1590 /* MulMethod.m in Sources */,
+				CE9826D3175CEC16005C1590 /* DivMethod.m in Sources */,
+				CE9826D6175CED3E005C1590 /* Calculation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +262,7 @@
 		CE9826C2175CDFE8005C1590 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "objective-c learn/objective-c learn-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -215,6 +272,7 @@
 		CE9826C3175CDFE8005C1590 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "objective-c learn/objective-c learn-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
